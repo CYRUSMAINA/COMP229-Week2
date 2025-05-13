@@ -1,5 +1,10 @@
 import { Routes,Route } from "react-router-dom"
 import Layout from "./component/Layout"
+import Home from "./component/Home"
+import About from "./component/About"
+import Education from "./component/Education"
+import Projects from "./component/Projects"
+import Contacts from "./component/Contacts"
 
 const MainRouter = () => 
     {
@@ -7,11 +12,11 @@ const MainRouter = () =>
         <div>
              <Layout/>
             <Routes>
-                <Route path ="/" element = {<h1>Home</h1>}/>
-                <Route path ="/about" element = {<h1>About</h1>}/>
-                <Route path ="/education" element = {<h1>Education</h1>}/>
-                <Route path ="/projects" element = {<h1>Projects</h1>}/>
-                <Route path ="/contacts" element = {<h1>Contacts</h1>}/>
+                <Route path ="/" element = {<Home/>}/>
+                <Route path ="/about" element = {<About/>}/>
+                <Route path ="/education" element = {<Education/>}/>
+                <Route path ="/projects" element = {<Projects/>}/>
+                <Route path ="/contacts" element = {<Contacts/>}/>
             </Routes>
         </div>
        )
