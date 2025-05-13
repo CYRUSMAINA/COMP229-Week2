@@ -1,8 +1,8 @@
-export default function Education()
+export default function Service()
 {
      return(
       <div>
-         <h1>Education</h1>
+         <h1>Service</h1>
          <p> Lets Learn new things.</p>
       </div>
         

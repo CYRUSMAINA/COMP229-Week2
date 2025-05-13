@@ -5,7 +5,7 @@ export default function Layout ()
         <>
             <h1>My Portfolio </h1>
             <nav> 
-            <Link to="/">Home </Link>| <Link to="/about">About </Link>|<Link to="/education">Education </Link>|<Link to="/projects">Projects </Link>|<Link to="/contacts">Contacts </Link>
+            <Link to="/">Home </Link>| <Link to="/about">About </Link>|<Link to="/service">Service</Link>|<Link to="/projects">Projects </Link>|<Link to="/contacts">Contacts </Link>
             </nav>
         </>
 
