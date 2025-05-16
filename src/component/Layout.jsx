@@ -1,3 +1,10 @@
+/** 
+ * File:Contacts.jsx
+ * Student Name:Cyrus Maina
+ * Student Id:301147699
+ * Date:
+*/
+
 import { Link } from "react-router-dom"
 import Logo from "./Logo"
 export default function Layout () 
