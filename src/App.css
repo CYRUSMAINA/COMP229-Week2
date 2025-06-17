@@ -337,6 +337,10 @@ h1, h2, h3 {
   border-radius: 6px;
 }
 
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
 /*main-header*/
 .main-header {
   background: var(--primary-color);
@@ -348,6 +352,8 @@ h1, h2, h3 {
   justify-content: flex-start;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.main-header .site-title {
+  color: white;
+}
 
 
