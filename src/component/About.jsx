@@ -9,7 +9,7 @@ import Profile from "../assets/Profile.jpg";
 export default function About()
 {
      return(
-      <div style={{padding:'1rem',maxWidth:'600px',margin:'auto'}}>
+      <div className="about-container">
          <h1>About Me</h1>
          <img 
          src={Profile}
