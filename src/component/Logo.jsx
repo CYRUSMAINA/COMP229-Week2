@@ -9,7 +9,7 @@
 export default function Logo()
 {
      return(
-      <div className="Logo-box"
+      <div className="logo-box"
       >
           CM@
        </div>
