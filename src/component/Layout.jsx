@@ -11,7 +11,7 @@ export default function Layout ()
 {
     return(
         <>
-            <header style={{display:'flex',alignItems:'center',gap:'1rem'}}>
+            <header className="main-header">
                 <Logo/>
                 <h1 className="site-title">My Portfolio </h1>
             </header>
