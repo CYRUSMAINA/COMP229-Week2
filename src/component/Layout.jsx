@@ -13,7 +13,7 @@ export default function Layout ()
         <>
             <header style={{display:'flex',alignItems:'center',gap:'1rem'}}>
                 <Logo/>
-                <h1>My Portfolio </h1>
+                <h1 className="site-title">My Portfolio </h1>
             </header>
             
             <nav> 
