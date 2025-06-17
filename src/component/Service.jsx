@@ -18,7 +18,7 @@ export default function Service()
 {
    
      return(
-      <div style={{padding:"20px",fontFamily:"Arial"}}>
+      <div className="service-container">
          <h1>My Services</h1>
          <p>Lets learn new things and build amazing projects!</p>
          {/*Links to each service*/}

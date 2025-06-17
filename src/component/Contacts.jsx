@@ -29,7 +29,7 @@ export default function Contacts()
       navigate('/')
    }
      return(
-      <div style={{padding:"20px", fontFamily:"Arial"}}>
+      <div className="contacts-container">
          <h1>Contact Me</h1>
          <div style={{marginBottom:"30px",padding:"15px",border:"1px solid #ccc",borderRadius:"8px"}}>
             <h2>Contact Info</h2>

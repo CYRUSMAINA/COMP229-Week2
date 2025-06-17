@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 export default function Home()
 {
      return(
-        <div>
+        <div className="home-container">
             
             <h1>Welcome To My Portfolio.</h1>
             <p>This site showcases my skills,projects and experience. </p>

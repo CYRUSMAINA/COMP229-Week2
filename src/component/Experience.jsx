@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <div>
+    <div className="experience-container">
       <h1>Experience & Projects</h1>
 
       <section>

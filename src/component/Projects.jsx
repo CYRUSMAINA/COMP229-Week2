@@ -8,7 +8,7 @@
 export default function Projects()
 {
      return(
-      <div>
+      <div className="projects-container">
           <h1>Projects</h1>
           {/*-----------------------project 1---------------------------*/}
           <div className="project">
