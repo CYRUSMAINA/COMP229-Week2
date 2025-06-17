@@ -14,6 +14,7 @@ import About from "./component/About"
 import Service from "./component/Service"
 import Projects from "./component/Projects"
 import Contacts from "./component/Contacts"
+import Experience from "./component/Experience"
 
 const MainRouter = () => 
     {
@@ -26,6 +27,7 @@ const MainRouter = () =>
                 <Route path ="/service" element = {<Service/>}/>
                 <Route path ="/projects" element = {<Projects/>}/>
                 <Route path ="/contacts" element = {<Contacts/>}/>
+                <Route path="experience" element={<Experience />} />
             </Routes>
         </div>
        )

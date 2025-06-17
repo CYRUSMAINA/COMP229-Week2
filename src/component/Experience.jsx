@@ -1,0 +1,35 @@
+const Experience = () => {
+  return (
+    <div>
+      <h1>Experience & Projects</h1>
+
+      <section>
+        <h2>SimpleEMR</h2>
+        <p><strong>Technologies:</strong> C#, Oracle SQL</p>
+        <p>
+          Developed a simplified Electronic Medical Records system to manage patient data, appointments, and medical history with secure access controls.
+        </p>
+      </section>
+
+      <section>
+        <h2>Online Bookstore Database System</h2>
+        <p><strong>Technologies:</strong> SQL, Advanced Database Concepts</p>
+        <p>
+          Designed and implemented a comprehensive database system for an online bookstore, including inventory management, customer orders, and sales reporting.
+        </p>
+      </section>
+
+      {/* Optionally, you can add a brief note about previous non-tech work */}
+      <section>
+        <h2>Additional Experience</h2>
+        <p><strong>Security Guard</strong> (2019 - 2022)</p>
+        <p>Maintained safety and security of premises, demonstrating responsibility and strong communication skills.</p>
+
+        <p><strong>Personal Support Worker (PSW)</strong> (2023 - Present)</p>
+        <p>Providing compassionate care and currently transitioning into tech through HIT program at Centennial College.</p>
+      </section>
+    </div>
+  );
+};
+
+export default Experience;

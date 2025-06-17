@@ -17,7 +17,7 @@ export default function Layout ()
             </header>
             
             <nav> 
-            <Link to="/">Home </Link>| <Link to="/about">About </Link>|<Link to="/service">Service</Link>|<Link to="/projects">Projects </Link>|<Link to="/contacts">Contacts </Link>
+            <Link to="/">Home </Link>| <Link to="/about">About </Link>|<Link to="/service">Service</Link>|<Link to="/projects">Projects </Link>|<Link to="/contacts">Contacts </Link>|<NavLink to="/experience">Experience</NavLink>
             </nav>
         </>
 
