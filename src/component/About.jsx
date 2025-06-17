@@ -18,7 +18,51 @@ export default function About()
 
          />
          <h2>Cyrus Ciira Maina</h2>
-         <p> I am a passonate student, dedicated to developing my  web application skills in React,Javascript  and full stack development.I aim to create a clean and user-friendly web experiences.</p>
+         <p> 
+          I am a passonate student, dedicated to developing my  web application 
+          skills in React,Javascript  and full stack development.
+          I aim to create a clean and user-friendly web experiences.
+          </p>
+          <p>
+        After working as a Security Guard (2019–2022), I enrolled in the Health
+        Informatics Technology program at Centennial College to transition into
+        the tech field. I’ve since built several hands-on projects and am
+        currently working part-time as a PSW while continuing to develop my
+        technical skills.
+      </p>
+      <p>
+        <strong>Technologies I’m working with:</strong> React, JavaScript,
+        HTML, CSS, Node.js, Express, MongoDB, Oracle SQL, C#
+      </p>
+      <p>
+        I'm actively seeking internship or junior developer opportunities where
+        I can apply my knowledge, continue learning, and contribute to
+        real-world projects in a collaborative team environment.
+      </p>
+      <hr />
+
+      <h2>Education & Coursework Highlights</h2>
+
+      <h3>Current Courses</h3>
+      <ul>
+        <li>Web Application Development</li>
+      </ul>
+
+      <h3>Relevant Completed Courses</h3>
+      <ul>
+        <li>Data Structures & Algorithms</li>
+        <li>Enterprise Systems Integration (ESI)</li>
+        <li>IT Project Management</li>
+        <li>Advanced Database Concepts (MySQL/SQL Server)</li>
+        <li>Software Testing & Quality</li>
+        <li>Clinical Workflow & IT Solutions</li>
+        <li>Tools, Algorithms & Methods for HCIS</li>
+        <li>Programming in C#, JavaScript, Python</li>
+        <li>Client-side Web Development</li>
+        <li>Unix/Linux, Networking for Developers</li>
+        <li>Business Communication, Entrepreneurship</li>
+      </ul>
+    
          </div>
        
      )
