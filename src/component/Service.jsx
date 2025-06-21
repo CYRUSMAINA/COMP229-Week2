@@ -24,28 +24,28 @@ export default function Service()
          {/*Links to each service*/}
          <div>
             <h2>Explore My Service</h2>
-            <ul>
+            <ul className='service-list'> 
                <li><Link to="/service/web-development">Web Development</Link></li>
                <li><Link to="/service/mobile-application">Moble Application</Link></li>
                <li><Link to="/service/general-programming">General Programming</Link></li>
             </ul>
          </div>
          {/* List of services with icon*/}
-         <div style={{display:"flex", marginTop:"20px",gap:"20px"}}>
-            <div style={{textAlign:"center",width:"150px"}}>
-               <FontAwesomeIcon icon={faLaptopCode} size="3x" style={{marginBottom:"10px"}}/>
+         <div className='service-grid'>
+            <div className='service-card'>
+               <FontAwesomeIcon icon={faLaptopCode} size="3x"/>
                <h3>Web Development</h3>
                <p>Building modern websites that's are also responsive </p>
-
             </div>
-            <div style={{textAlign:"center",width:"150px"}}>
-               <FontAwesomeIcon icon={faMobileAlt} size="3x" style={{marginBottom:"10px"}}/>
+
+            <div className='service-card'>
+               <FontAwesomeIcon icon={faMobileAlt} size="3x"/>
                <h3>Mobile Application</h3>
                <p>Creating Android applications </p>
 
             </div>
-            <div style={{textAlign:"center",width:"150px"}}>
-               <FontAwesomeIcon icon={faCode} size="3x" style={{marginBottom:"10px"}}/>
+            <div className='service-card'>
+               <FontAwesomeIcon icon={faCode} size="3x"/>
                <h3>General Programming</h3>
                <p>Programming solution for variouse needs </p>
 
