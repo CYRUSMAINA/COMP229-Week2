@@ -12,7 +12,7 @@ export default function Projects()
           <h1>Projects</h1>
           {/*-----------------------project 1---------------------------*/}
           <div className="project">
-            <img src="react.svg" alt="React Portfolio" width="300" />
+            <img src="react.svg" alt="React Portfolio" width="300" /> 
             <h2>My Portfolio</h2>
             <p><strong>Role:</strong>Developer</p>
             <p>This portfolio was build using React to showcase my work and skills.
@@ -45,14 +45,14 @@ export default function Projects()
         </p>
         <div className="project-links">
           <a href="https://github.com/CYRUSMAINA" target="_blank" rel="noopener noreferrer" className="project-button">
-            View Code
+            View my GitHub
           </a>
           
         </div>
 
     </div>
 
-  </div>
+</div>
        
      );
 }
