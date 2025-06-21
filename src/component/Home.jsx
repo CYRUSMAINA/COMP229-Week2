@@ -11,15 +11,18 @@ export default function Home()
 {
      return(
         <div className="home-container">
-            
-            <h1>Welcome To My Portfolio.</h1>
+            {/*Hero Corner*/}
+            <h1>Hi,I'm Cyrus Maina</h1>
+            <h2>Welcome to my portfolio</h2>
             <p>This site showcases my skills,projects and experience. </p>
+            <section style={{marginTop:'2rem',marginBottom:'2rem'}}>
             <h3>Mission statement</h3>
-            <p>Mission:To grow as full stack developer by continues learning and creating great apps</p>
-
-            <div  style={{margin:'1rem'}}>
+            <p>My mission is to grow as full stack developer by continues learning 
+                and creating great apps</p>
+            </section>
+            <div  style={{marginTop:'2rem'}}>
                 <Link to="/about">
-                <button>Learn more about me</button>
+                <button className="cta-button">Learn more about me</button>
                  </Link>
             </div>
         </div>
