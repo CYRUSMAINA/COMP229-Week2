@@ -13,26 +13,46 @@ export default function Projects()
           {/*-----------------------project 1---------------------------*/}
           <div className="project">
             <img src="react.svg" alt="React Portfolio" width="300" />
-            <h2>React Portfolio</h2>
+            <h2>My Portfolio</h2>
             <p><strong>Role:</strong>Developer</p>
-            <p>This portfolio was build using React to showcase my work and skills.It has 5 pages, Home,About,Projects,Service and contacts.</p>
+            <p>This portfolio was build using React to showcase my work and skills.
+              It has 5 pages, Home,About,Projects,Service and contacts.</p>
+              <div className="project-links">
+                <a href="https://github.com/CYRUSMAINA/COMP229-Week2.git" target="_blank" rel="noopener noreferrer" className="project-button">
+                View Code 
+                </a>
+              </div>
           </div>
           {/*------------------------project 2---------------------------*/}
-          <div className="project">
-            <img src="Integration.jpg" alt="Enterprise System Integration App" width="300" />
-            <h2>Enterprise System Integration App</h2>
-            <p><strong>Role:</strong>Full-stack Developer</p>
-            <p>This app was  to showcase the benefit of integrating departments information for effective communication and time saving.</p>
-          </div>
-          {/*-------------------------project 2-------------------------*/}
-          <div className="project">
-            <img src="IntegratedProject.jpg" alt="LibMan Digital Library Management System" width="300" />
-            <h2>LibMan Digital Library Management System</h2>
-            <p><strong>Role:</strong>Full-stack Developer</p>
-            <p>This app was to upgrade  Library system from manual system to digital system by integrating both system.</p>
-          </div>
-          
+           <div className="project">
+        <h2>SimpleEMR</h2>
+        <p><strong>Technologies:</strong> C#, Oracle SQL</p>
+        <p>
+          Developed a simplified Electronic Medical Records (EMR) system to manage patient data, appointments, and medical history with secure access controls.
+        </p>
+        <div className="project-links">
+          <a href="https://github.com/CYRUSMAINA/SimpleEMR_C-sharp_n_SQL.git" target="_blank" rel="noopener noreferrer" className="project-button">
+            View Code
+          </a>
+        </div>
       </div>
+{/*----------------project 3-------------------------*/}
+     <div className="project">
+        <h2>Online Bookstore Database System</h2>
+        <p><strong>Technologies:</strong> SQL, Advanced Database Concepts</p>
+        <p>
+          Designed and implemented a comprehensive database system for an online bookstore, including inventory management, customer orders, and sales reporting.
+        </p>
+        <div className="project-links">
+          <a href="https://github.com/CYRUSMAINA" target="_blank" rel="noopener noreferrer" className="project-button">
+            View Code
+          </a>
+          
+        </div>
+
+    </div>
+
+  </div>
        
-     )
+     );
 }
