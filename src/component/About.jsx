@@ -24,8 +24,7 @@ export default function About()
           I aim to create a clean and user-friendly web experiences.
           </p>
           <p>
-        After working as a Security Guard (2019–2022), I enrolled in the Health
-        Informatics Technology program at Centennial College to transition into
+        I enrolled in the Health Informatics Technology program in 2021 at Centennial College to transition into
         the tech field. I’ve since built several hands-on projects and am
         currently working part-time as a PSW while continuing to develop my
         technical skills.
