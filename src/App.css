@@ -32,6 +32,22 @@ header {
   justify-content: flex-start;;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* With a class-based rule to avoid styling all <header> elements */
+.generic-header {
+  background: var(--gray-color);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main-header {
+  /* existing styles... */
+  margin-bottom: 1rem; /* Add spacing below */
+}
+
 
 .site-title {
   font-size: 1.5rem;
