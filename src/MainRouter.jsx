@@ -22,12 +22,15 @@ const MainRouter = () =>
         <div>
              <Layout/>
             <Routes>
-                <Route path ="/" element = {<Home/>}/>
+                <Route path ="/" element = {<Layout/>}>
+                <Route index element={<Home />} />
                 <Route path ="/about" element = {<About/>}/>
                 <Route path ="/service" element = {<Service/>}/>
                 <Route path ="/projects" element = {<Projects/>}/>
                 <Route path ="/contacts" element = {<Contacts/>}/>
                 <Route path="experience" element={<Experience />} />
+                </Route>
+            
             </Routes>
         </div>
        )
