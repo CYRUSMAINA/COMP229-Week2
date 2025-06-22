@@ -304,7 +304,7 @@ h1, h2, h3 {
 
 /*main-header*/
 .main-header {
-  background: var(--primary-color);
+  background: var(--gray-color);
   color: white;
   padding: 1.5rem;
   display: flex;
