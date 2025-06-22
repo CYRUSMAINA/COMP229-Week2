@@ -6,13 +6,12 @@
 */
 
 import { Link } from "react-router-dom"
-import MainHeader from "../component/MainHeader"
 
 export default function Home()
 {
      return(
         <>
-        <MainHeader/>
+        
         <div className="home-container">
             {/*Hero Corner*/}
             <h1>Hey there,I am Cyrus Maina.</h1>
