@@ -23,7 +23,7 @@ export default function Logo()
                x="50" 
                y="55" 
                textAnchor="middle" 
-               fontSize="25" 
+               fontSize="35" 
                fill="black" 
                fontWeight="bold"
                fontFamily="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
