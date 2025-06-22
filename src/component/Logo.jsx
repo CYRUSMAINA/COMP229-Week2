@@ -20,10 +20,10 @@ export default function Logo()
                <circle cx="50" cy="50" r="45" fill="white" stroke="black" strokeWidth="4"/>
 
                <text
-               x="70" 
-               y="75" 
+               x="50" 
+               y="55" 
                textAnchor="middle" 
-               fontSize="20" 
+               fontSize="25" 
                fill="black" 
                fontWeight="bold"
                fontFamily="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
@@ -33,7 +33,7 @@ export default function Logo()
                <path  
                strokeLinecap="round"
                strokeLinejoin="round"
-               d="M15 50h15l10-15 10 30 10-20 10 10h15"
+               d="M15 50h20l10-15 10 30 10-20 10 15h15"
                stroke="black"
                strokeWidth="2"
                fill="none"/>
