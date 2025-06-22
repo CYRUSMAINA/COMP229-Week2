@@ -7,13 +7,18 @@
 
 import { Link,Outlet } from "react-router-dom"
 import Logo from "./Logo"
-import MainHeader from "./MainHeader"
+
 
 export default function Layout () 
 {
     return(
         <>
-        <MainHeader/>
+       
+        <header className="main-header">
+            <Logo />
+            <h1 className="site-title">My Portfolio</h1>
+            </header>
+
            
             
             <nav> 
