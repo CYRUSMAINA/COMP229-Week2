@@ -6,13 +6,16 @@
 */
 
 import { Link } from "react-router-dom"
+import MainHeader from "../component/MainHeader"
 
 export default function Home()
 {
      return(
+        <>
+        <MainHeader/>
         <div className="home-container">
             {/*Hero Corner*/}
-            <h1>Hi,I'm Cyrus Maina</h1>
+            <h1>Hey there,I am Cyrus Maina.</h1>
             <h2>Welcome to my portfolio</h2>
             <p>This site showcases my skills,projects and experience. </p>
             <section style={{marginTop:'2rem',marginBottom:'2rem'}}>
@@ -26,6 +29,6 @@ export default function Home()
                  </Link>
             </div>
         </div>
-        
+        </>
      )
 }
