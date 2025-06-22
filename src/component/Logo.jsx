@@ -20,8 +20,8 @@ export default function Logo()
                <circle cx="50" cy="50" r="45" fill="white" stroke="black" strokeWidth="4"/>
 
                <text
-               x="50" 
-               y="55" 
+               x="70" 
+               y="75" 
                textAnchor="middle" 
                fontSize="20" 
                fill="black" 
