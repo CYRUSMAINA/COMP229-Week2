@@ -285,16 +285,22 @@ h1, h2, h3 {
 
 /*logo.jsx*/
 .logo-box {
-  width: 50px;
-  height: 50px;
-  background-color: #4CAF50;
-  color: white;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  border-radius: 6px;
+  gap: 0.5rem; /* Spacing between text and SVG */
+  background-color: var(--primary-color); /* Use primary color */
+  color: white;
+  font-weight: bold;
+  border-radius: 50%; /* Make it circular */
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight elevation */
+}
+
+.logo-box:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
 
 
@@ -422,6 +428,40 @@ button {
 button:hover {
   background-color: var(--accent-color);
   color: var(--text-color);
+}
+.textNfontBold {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.testTeal {
+  width: 24px;
+  height: 24px;
+  stroke: var(--primary-color); /* Matches the primary color */
+  transition: stroke 0.3s ease;
+}
+
+.testTeal:hover {
+  stroke: var(--accent-color); /* Change to accent color on hover */
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rounded {
+  border-radius: 6px;
+}
+
+.box-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.icon {
+  width: 24px;
+  height: 24px;
 }
 
 
