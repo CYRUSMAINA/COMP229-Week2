@@ -15,7 +15,7 @@ export default function Logo()
           <svg 
           className="testTeal"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
+          viewBox="0 0 100 100"
           >
                <circle cx="50" cy="50" r="45" fill="white" stroke="black" strokeWidth="4"/>
 

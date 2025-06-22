@@ -285,22 +285,19 @@ h1, h2, h3 {
 
 /*logo.jsx*/
 .logo-box {
-  display: flex;
+ display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem; /* Spacing between text and SVG */
-  background-color: var(--primary-color); /* Use primary color */
-  color: white;
-  font-weight: bold;
-  border-radius: 50%; /* Make it circular */
-  width: 60px;
-  height: 60px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight elevation */
+  background-color: var(--secondary-color); /* Light background for contrast */
+  border-radius: 50%; /* Makes the logo container circular */
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: background-color 0.3s ease;
 }
 
 .logo-box:hover {
-  background-color: var(--accent-color);
-  color: var(--text-color);
+ background-color: var(--accent-color); /* Accent on hover */
 }
 
 
@@ -437,10 +434,9 @@ button:hover {
 }
 
 .testTeal {
-  width: 24px;
-  height: 24px;
-  stroke: var(--primary-color); /* Matches the primary color */
-  transition: stroke 0.3s ease;
+  width: 100%; /* Ensure the SVG fits the container */
+  height: 100%;
+  stroke: var(--primary-color);
 }
 
 .testTeal:hover {
