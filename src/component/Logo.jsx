@@ -13,7 +13,7 @@ export default function Logo()
          
 
           <svg 
-          className="testTeal"
+          className="logo-svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
           >
@@ -23,20 +23,13 @@ export default function Logo()
                x="50" 
                y="55" 
                textAnchor="middle" 
-               fontSize="45" 
+               fontSize="50" 
                fill="black" 
                fontWeight="bold"
-               fontFamily="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
-               > CM </text>
+               fontFamily="'Fira Code', monospace"
+               > {'CM' }
+               </text>
 
-
-               <path  
-               strokeLinecap="round"
-               strokeLinejoin="round"
-               d="M15 50h20l10-15 10 30 10-20 10 15h15"
-               stroke="black"
-               strokeWidth="2"
-               fill="none"/>
 
           </svg>
       
