@@ -8,6 +8,7 @@
   --nav-link-color: #ffffff;
   --nav-link-hover: #ffc107;
   --card-bg: #ffffff;
+  --header-color: #1c2331;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 1280px;
   margin: 0 auto;
@@ -22,37 +23,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  background: var(--gray-color);
-  color: white;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: flex-start;;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-/* With a class-based rule to avoid styling all <header> elements */
-.generic-header {
-  background: var(--gray-color);
-  color: white;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: flex-start;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.main-header {
- background-color: var(--gray-color);
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 /* Left: Logo + Title */
 .logo-title {
   display: flex;
@@ -237,7 +208,7 @@ h1, h2, h3 {
   text-align: left;
 }
 
-.contact-container h1 {
+.contacts-container h1 {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
@@ -322,7 +293,7 @@ h1, h2, h3 {
 
 /*main-header*/
 .main-header {
-  background-color: var(--gray-color);
+  background-color:var(--header-color);
   color: white;
   padding: 1rem 1.5rem;
   position: relative;
@@ -333,17 +304,12 @@ h1, h2, h3 {
 }
 
 .main-header .site-title {
+  color: white;
   font-size: 2rem;
   z-index: 2;
   position: relative;
 }
 
-
-.tech-background img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
 
 .cta-button {
   background-color: var(--primary-color);
@@ -509,9 +475,12 @@ button:hover {
 }
 
 .tech-background img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.1); /* soft backdrop */
+  padding: 5px;
+  border-radius: 6px;
 }
 
 
