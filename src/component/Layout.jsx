@@ -15,6 +15,10 @@ export default function Layout ()
     return(
         <>
         <header className="main-header">
+            <div className="logo-title">
+                <Logo />
+                <h1 className="site-title">My Portfolio</h1>
+                </div>
             <div className="tech-background">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
@@ -24,11 +28,7 @@ export default function Layout ()
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
                 </div>
                 
-                {/* Content over background */}
-                <div style={{ position: "relative", zIndex: 2 }}>
-                    <Logo />
-                    <h1 className="site-title">My Portfolio</h1>
-                    </div>
+                
                     </header>
 
        

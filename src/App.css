@@ -44,16 +44,28 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .main-header {
-  /* existing styles... */
-  margin-bottom: 1rem; /* Add spacing below */
+ background-color: var(--gray-color);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Left: Logo + Title */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 
 .site-title {
   font-size: 1.5rem;
-  color: white;
   font-weight: bold;
   margin: 0;
+  white-space: nowrap;
 }
 
 nav {
@@ -92,20 +104,6 @@ h1, h2, h3 {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
@@ -339,32 +337,12 @@ h1, h2, h3 {
   z-index: 2;
   position: relative;
 }
-.tech-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0.1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  background-color: transparent;
-  animation: moveBg 20s linear infinite;
-}
+
 
 .tech-background img {
   width: 50px;
   height: 50px;
   object-fit: contain;
-}
-
-@keyframes moveBg {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-10%); }
 }
 
 .cta-button {
@@ -522,18 +500,17 @@ button:hover {
   text-overflow: ellipsis;
 }
 
-/* Tech icons container on right */
 .tech-background {
-  flex: 0 0 auto;
   display: flex;
   gap: 1rem;
-  opacity: 0.15;
-  pointer-events: none;
+  flex-wrap: nowrap;
+  opacity: 0.2;
+  pointer-events: none; /* Optional, remove if hover effects are needed */
 }
 
 .tech-background img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
 }
 
