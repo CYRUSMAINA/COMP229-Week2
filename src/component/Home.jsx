@@ -5,17 +5,26 @@
  * Date:
 */
 
+import { useState,useEffect } from "react"
 import { Link } from "react-router-dom"
 
 export default function Home()
 {
+    const [data,setData] = useState(null);
+
+     useEffect(() => {
+    fetch('/api/data') // this assumes Vite proxy is forwarding to localhost:3000
+      .then((res) => res.json())
+      .then((dataFromServer)=> setData(dataFromServer))
+      .catch(err => console.error("API fetch failed:", err));
+  }, []);
      return(
         <>
         
         <div className="home-container">
             {/*Hero Corner*/}
             <h1>Hey there,I am Cyrus Maina.</h1>
-            <h2>Welcome to my portfolio</h2>
+            <h2>{data && data.message}</h2>
             <p>This site showcases my skills,projects and experience. </p>
             <section style={{marginTop:'2rem',marginBottom:'2rem'}}>
             <h3>Mission statement</h3>

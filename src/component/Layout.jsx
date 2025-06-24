@@ -33,8 +33,16 @@ export default function Layout ()
 
        
             <nav> 
-            <Link to="/">Home </Link>| <Link to="/about">About </Link>|<Link to="/service">Service</Link>|<Link to="/projects">Projects </Link>|<Link to="/contacts">Contacts </Link>|<Link to="/experience">Experience</Link>
-            </nav>
+                <ul   className="nav-links">
+                     <li><Link to="/">Home </Link></li>
+                      <li><Link to="/about">About </Link></li>
+                      <li><Link to="/service">Service</Link></li>
+                      <li><Link to="/projects">Projects </Link></li>
+                      <li><Link to="/contacts">Contacts </Link></li>
+                      <li><Link to="/experience">Experience</Link></li>
+                     </ul>
+                     </nav>
+                     
             <main><Outlet /></main>
         </>
 
