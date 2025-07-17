@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 export default function Contacts()
 {
    const [formData, setFormData] = useState({
-      firstName:" ",
+      firstName:"",
       lastName:"",
       contactNumber:"",
       email:"",
@@ -25,11 +25,12 @@ export default function Contacts()
    }
    const handleSubmit = (e)=>{
       e.preventDefault();
+      alert("Message sent successfully!");
       console.log("form Submited:",formData);
       navigate('/')
    }
      return(
-      <div style={{padding:"20px", fontFamily:"Arial"}}>
+      <div className="contacts-container">
          <h1>Contact Me</h1>
          <div style={{marginBottom:"30px",padding:"15px",border:"1px solid #ccc",borderRadius:"8px"}}>
             <h2>Contact Info</h2>
@@ -52,18 +53,17 @@ export default function Contacts()
             </div>
             <div style={{marginBottom:"10px"}}>
                <label>Contact Number:</label><br/>
-               <input type="text" name="contactNumber" value={formData.contactNumber} onChange={handleChange} required/>
+               <input type="tel" name="contactNumber" value={formData.contactNumber} onChange={handleChange} required/>
 
             </div>
             <div style={{marginBottom:"10px"}}>
                <label>Email:</label><br/>
-               <input type="text" name="email" value={formData.email} onChange={handleChange} required/>
+               <input type="email" name="email" value={formData.email} onChange={handleChange} required/>
 
             </div>
             <div style={{marginBottom:"10px"}}>
                <label>Message:</label><br/>
-               <input type="text" name="message" value={formData.message} onChange={handleChange} required/>
-
+               <textarea name="message" value={formData.message} onChange={handleChange} required rows="4" />
             </div>
             <button type="submit">Send Message</button>
          </form>
