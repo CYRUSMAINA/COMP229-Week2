@@ -15,11 +15,11 @@ import Service from "./component/Service"
 import Projects from "./component/Projects"
 import Contacts from "./component/Contacts"
 
-const MainRouter = () => 
+const MainRouter = ({user,onLogout}) => 
     {
        return(
         <div>
-             <Layout/>
+             <Layout  user={user} onLogout={onLogout}/>
             <Routes>
                 <Route path ="/" element = {<Home/>}/>
                 <Route path ="/about" element = {<About/>}/>
