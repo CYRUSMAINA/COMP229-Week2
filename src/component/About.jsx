@@ -17,20 +17,20 @@ export default function About()
          style={{width:'150px',borderRadius:'8px',marginBottom:'1rem'}}
 
          />
-         <h2>Cyrus Ciira Maina</h2>
+         <h2>Cyrus C Maina</h2>
          <p> 
-          I am a passonate student, dedicated to developing my  web application 
+          I am a passonate, dedicated to developing my  web application 
           skills in React,Javascript  and full stack development.
           I aim to create a clean and user-friendly web experiences.
           </p>
           <p>
         I enrolled in the Health Informatics Technology program in 2021 at Centennial College to transition into
         the tech field. I’ve since built several hands-on projects and am
-        currently working part-time as a PSW while continuing to develop my
+        currently working to develop my
         technical skills.
       </p>
       <p>
-        <strong>Technologies I’m working with:</strong> React, JavaScript,
+        <strong>Tools I’m working with:</strong> React, JavaScript,
         HTML, CSS, Node.js, Express, MongoDB, Oracle SQL, C#
       </p>
       <p>
@@ -47,7 +47,7 @@ export default function About()
         <li>Web Application Development</li>
       </ul>
 
-      <h3>Relevant Completed Courses</h3>
+      <h3>Completed Courses</h3>
       <ul>
         <li>Data Structures & Algorithms</li>
         <li>Enterprise Systems Integration (ESI)</li>
