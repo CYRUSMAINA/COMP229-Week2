@@ -5,49 +5,58 @@
  * Date:
 */
 
-import { Link,Outlet } from "react-router-dom"
-import Logo from "./Logo"
+import { NavLink, Outlet } from "react-router-dom";
 
+export default function Layout({ user, onLogout }) {
+  return (
+     <div className="layout">
+      <header className="bg-light py-3 text-center">
+        <h1 className="site-title">My Portfolio</h1>
+        <div className="tech-background text-center my-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" height="40" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" height="40" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" height="40" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" height="40" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" height="40" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" height="40" />
+        </div>
+      </header>
 
-export default function Layout () 
-{
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <NavLink className="navbar-brand" to="/">Home</NavLink>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-    return(
-        <>
-        <header className="main-header">
-            <div className="logo-title">
-                <Logo />
-                <h1 className="site-title">My Portfolio</h1>
-                </div>
-            <div className="tech-background">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-                </div>
-                
-                
-                    </header>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mr-auto">
+            <li className='nav-item'><NavLink className='nav-link' to="/about">About</NavLink></li>
+            <li className='nav-item'><NavLink className='nav-link' to="/service">Service</NavLink></li>
+            <li className='nav-item'><NavLink className='nav-link' to="/projects">Projects</NavLink></li>
+            <li className='nav-item'><NavLink className='nav-link' to="/contacts">Contacts</NavLink></li>
+            <li className='nav-item'><NavLink className='nav-link' to="/experience">Experience</NavLink></li>
+          </ul>
+          <ul className='navbar-nav ml-auto'>
+            {user ? (
+              <li className='nav-item d-flex align-items-center'>
+                <span className='navbar-text me-3'>Hello, {user.username}</span>
+                <button className='btn btn-outline-danger' onClick={onLogout}>Logout</button>
+              </li>
+            ) : (
+              <>
+                <li className='nav-item'><NavLink className='nav-link' to="/register">Register</NavLink></li>
+                <li className='nav-item'><NavLink className='nav-link' to="/login">Login</NavLink></li>
+              </>
+            )}
+          </ul>
+        </div>
+      </nav>
 
-       
-            <nav> 
-                <ul   className="nav-links">
-                     <li><Link to="/">Home </Link></li>
-                      <li><Link to="/about">About </Link></li>
-                      <li><Link to="/service">Service</Link></li>
-                      <li><Link to="/projects">Projects </Link></li>
-                      <li><Link to="/contacts">Contacts </Link></li>
-                      <li><Link to="/experience">Experience</Link></li>
-
-                      <li><Link to="/register">Register</Link></li>
-                      <li><Link to="/login">Login</Link></li>
-                     </ul>
-                     </nav>
-                     
-            <main><Outlet /></main>
-        </>
-
-    )
+      {/* Page Content */}
+      <main className="container mt-4">
+        <Outlet />
+      </main>
+    </div> 
+  );
 }
+
