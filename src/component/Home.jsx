@@ -13,7 +13,7 @@ export default function Home()
     const [data,setData] = useState(null);
 
      useEffect(() => {
-    fetch('/api/data') // this assumes Vite proxy is forwarding to localhost:3000
+    fetch('/api/data') // this assumes Vite proxy is forwarding to localhost:5000
       .then((res) => res.json())
       .then((dataFromServer)=> setData(dataFromServer))
       .catch(err => console.error("API fetch failed:", err));
@@ -28,7 +28,7 @@ export default function Home()
             <p>This site showcases my skills,projects and experience. </p>
             <section style={{marginTop:'2rem',marginBottom:'2rem'}}>
             <h3>Mission statement</h3>
-            <p>My mission is to grow as full stack developer by continues learning 
+            <p>My mission is to grow as full stack developer by continuously learning 
                 and creating great apps</p>
             </section>
             <div  style={{marginTop:'2rem'}}>
