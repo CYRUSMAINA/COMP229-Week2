@@ -18,28 +18,34 @@ const Register = ()=>{
         const{name,value}=e.target;
         setForm({...form,[name]:value})
     }
-    const handleSubmit = async (e)=>{
-        e.preventDefault();
-        try{
-            const response = await fetch('/api/auth/register',{
-                method:'POST',
-                headers:{
-                    'Content-Type':'application/json',
-                },
-                body:JSON.stringify(form)
-            })
-            if(!response.ok){
-                throw new Error ('failed to register');
-            }
-            const data= await response.json();
-            localStorage.setItem('token',data.token);
-            localStorage.setItem('username',data.user.username)
+    const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await fetch('/api/auth/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(form),
+    });
 
-            navigate('/')
-        }catch (error){
-            setError(error.message)
-        }
+    if (!response.ok) {
+      // Parse error message from backend response JSON
+      const errorData = await response.json();
+      throw new Error(errorData.message || 'Failed to register');
     }
+
+    const data = await response.json();
+    localStorage.setItem('token', data.token);
+    localStorage.setItem('username', data.user.username);
+
+    navigate('/');
+  } catch (error) {
+    setError(error.message);
+  }
+};
+
+   
     return(
         <div className="container mt-4">
             {error && <div className="alert alert-danger">{error}</div>}

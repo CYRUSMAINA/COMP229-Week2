@@ -100,8 +100,8 @@ export default function Projects()
 
                       <td>{project.name}</td>
                       <td>{project.description}</td>
-                      <td>{project.startDate}</td>
-                      <td>{project.endDate}</td>
+                      <td>{new Date(project.startDate).toLocaleDateString()}</td>
+                      <td>{new Date(project.endDate).toLocaleDateString}</td>
 
                       <td>
                         <button className="btn btn-secondary me-2" onClick={()=> navigate(`/project-details/${project._id}`)}>Update</button>
