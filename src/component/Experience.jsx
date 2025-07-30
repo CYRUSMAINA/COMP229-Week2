@@ -19,14 +19,10 @@ const Experience = () => {
         </p>
       </section>
 
-      {/* Optionally, you can add a brief note about previous non-tech work */}
+      
       <section>
         <h2>Additional Experience</h2>
-        <p><strong>Security Guard</strong> (2019 - 2022)</p>
-        <p>Maintained safety and security of premises, demonstrating responsibility and strong communication skills.</p>
-
-        <p><strong>Personal Support Worker (PSW)</strong> (2023 - Present)</p>
-        <p>Providing compassionate care and currently transitioning into tech through HIT program at Centennial College.</p>
+        
       </section>
     </div>
   );

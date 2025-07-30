@@ -13,7 +13,7 @@ export default function Home()
     const [data,setData] = useState(null);
 
      useEffect(() => {
-    fetch('/api/data') // this assumes Vite proxy is forwarding to localhost:5000
+    fetch('/api/data') 
       .then((res) => res.json())
       .then((dataFromServer)=> setData(dataFromServer))
       .catch(err => console.error("API fetch failed:", err));
@@ -22,7 +22,7 @@ export default function Home()
         <>
         
         <div className="home-container">
-            {/*Hero Corner*/}
+            
             <h1>Hey there,I am Cyrus Maina.</h1>
             <h2>{data && data.message}</h2>
             <p>This site showcases my skills,projects and experience. </p>

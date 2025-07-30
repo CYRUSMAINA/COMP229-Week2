@@ -1,4 +1,11 @@
 :root {
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   --primary-color: #0d6efd;     /* Blue */
   --gray-color: #6c757d; /* Neutral gray */
   --secondary-color: #f8f9fa;   /* Light background */

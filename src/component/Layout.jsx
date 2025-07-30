@@ -6,11 +6,14 @@
 */
 
 import { NavLink, Outlet } from "react-router-dom";
+import Logo from './Logo'; 
+
 
 export default function Layout({ user, onLogout }) {
   return (
      <div className="layout">
       <header className="bg-light py-3 text-center">
+           <Logo />
         <h1 className="site-title">My Portfolio</h1>
         <div className="tech-background text-center my-2">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" height="40" />
