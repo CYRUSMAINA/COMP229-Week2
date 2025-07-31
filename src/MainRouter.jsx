@@ -11,6 +11,7 @@ import Contacts from './component/Contacts';
 import Experience from './component/Experience';
 import Register from './component/Register';
 import Login from './component/Login';
+import ProjectDetails from './component/project_details';
 
 function App() {
   const getUserFromStorage = () => {
@@ -41,6 +42,9 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="experience" element={<Experience />} />
+      
+          <Route path="project-details" element={<ProjectDetails />} />
+          <Route path="project-details/:id" element={<ProjectDetails />} />
           <Route path="register" element={<Register />} />
            <Route path="login" element={<Login />} />
           
